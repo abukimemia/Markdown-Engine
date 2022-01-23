@@ -3,47 +3,31 @@
 These files are used to generate a [Reveal.js](https://revealjs.com/#/) slide deck.
 
 ## Dependencies
-The only dependency is Pandoc. Optional functionality to watch the file system and rebuild on changes requires Watchman. Optional functionality to serve and preview the files locally uses Python 3.
+The only dependency is [Pandoc](http://pandoc.org/). Optional functionality to watch the file system and rebuild on changes requires [Watchman](https://facebook.github.io/watchman/). Optional functionality to serve and preview the files locally uses [Python 3](https://docs.python.org/3/library/http.server.html).
 
-- Pandoc[Pandoc](http://pandoc.org/), a universal document converter
-- Watchman[Watchman](https://facebook.github.io/watchman/), a file watching service
-- Python 3[Python 3](https://docs.python.org/3/library/http.server.html), for `http.server`
+- [Pandoc](http://pandoc.org/), a universal document converter
+- [Watchman](https://facebook.github.io/watchman/), a file watching service
+- [Python 3](https://docs.python.org/3/library/http.server.html), for `http.server`
 
 Installation instructions vary depending on your system. See the linked websites for more information.
 
 
 ## Usage
-First, we will create a folder in the terminal called `first-servers`:
+1. First, we will create a folder in the terminal called `MarkDown`:
    ```batchfile 
-   $ mkdir first-servers
+   $ mkdir MarkDown
    ```
 then enter that folder:
    ```batchfile
-   $ cd first-servers
-   ```
+   $ cd MarkDown
+   
+Copy these files in your MarkDown folder.
 
-### Step 2: Clone this repository
-Now clone this repository to your directory. In your terminal, type `git clone`, then paste the URL of this repository i.e.:
-   ```shell
-   $ git clone https://github.com/abukimemia/Web-Server.git
-   ```
+2. Write your content in index.md
 
-### step 3: Install missing dependencies
-Once the code has been cloned into your directory, we will install the missing dependencies onto our project so that it can run successfully. Use the following command in your terminal:
-  ```shell 
-  $ npm install 
-  ```
-This process should take a while and once all the dependencies are successfully installed, open the project in your code editor of choice. If your code editor is **VS Code**, type the following command in your terminal to open vs code:
-  ```shell
-  $ code .
-  ```
-  
-  ### Step 4: Run server
-In your terminal in the project's directory, type the following command to run the server:
-  ```shell
-  $ node htmlFile.js
-  ```
-The server runs on `localhost` or ip address `127.0.0.1` on port `8000`. On your browser enter the following url address to receive a _HTTP reponse_ from the server:
-  ```
-  http://localhost:8000
-  ```
+3. Be sure to adjust the information like the title and author at the top of the file
+Start a new slide with #
+Run make watch to build the site and watch for changes.
+**NB: If you just want to preview it and don't want to install Watchman, run `python -m http.server` in `src/`.**
+
+4. View the presentation at http://127.0.0.1:8000.
