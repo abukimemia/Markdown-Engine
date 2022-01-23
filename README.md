@@ -37,7 +37,7 @@ Copy these files in your `MarkDown` folder.
 http://127.0.0.1:8000.
 ```
 ## Credits
-This work is a result of following @jez on [Github](https://github.com).
+This work is a result of following @jez on [Github](https://github.com/jez).
 
 For more information and resources on markdown templates, please check out his work at [pandoc-starter](https://github.com/jez/pandoc-starter)
 
